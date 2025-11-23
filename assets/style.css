@@ -1,0 +1,124 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* パディングやボーダーを含めた幅計算 */
+* {
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    margin: 0;
+    background: #202020;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    background-color: #202020;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+a{
+    color: #02b3c0;
+    text-decoration: none;
+}
+
+a:visited{ /*アクセスしたことのあるリンク*/
+    color:#aa00ff;
+}
+
+a:hover{
+    color: #0098fd;
+    text-decoration: underline;
+}
+
+button, a.button {
+    background-color: #457b9d; /* メインカラーを基調に明るめ */
+    color: #ffffff; /* 白でコントラストを確保 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+button:hover, a.button:hover {
+    background-color: #5d5d5e; /* メインカラーそのもの */
+}
+
+
+/* Footer styles */
+footer {
+    
+    background: #202020;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+
+
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  */
+
+/* スマートフォン向け（幅768px以下の場合） */
+@media (max-width: 768px) {
+    header {
+        text-align: left;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        padding: 5px 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
+
+
+/* 超小型画面（幅480px以下の場合） */
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    section {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
